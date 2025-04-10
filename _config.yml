@@ -4,10 +4,15 @@ icon_img: /assets/img/logo.png
 
 name: Kristin Weiland
 job: Software Developer | Filmmaker
+bio: >-
+  Filmmaker turned software developer with a passion for creative problem-solving 
+  and building elegant solutions. Experienced in Ruby on Rails, JavaScript, and React, 
+  with a background in film production that brings a unique perspective to software development.
 
 phone_number: 901-907-9946
-address: California, USA
+address: /assets/files/Kristin-Weiland-Tech-Resume.pdf
 email: kristinweiland@gmail.com
+# resume: /assets/files/Kristin-Weiland-Tech-Resume.pdf
 linkedin_username: kristinweiland
 github_username: KMPWeiland
 theme: jekyll-professional-resume
