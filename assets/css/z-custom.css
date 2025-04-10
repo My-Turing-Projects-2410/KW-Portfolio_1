@@ -1,0 +1,296 @@
+/* Custom color variables */
+:root {
+  --primary-color: #F2C9D8;
+  --secondary-color: #012840;
+  --dark-color: #011826;
+  --accent-color-1: #025373;
+  --accent-color-2: #025E73;
+}
+
+/* Force theme variables */
+:root,
+:root[data-theme="light"],
+:root[data-theme="dark"],
+html,
+body {
+  --theme1-light: #F2C9D8 !important;
+  --theme1-dark: #012840 !important;
+  --theme2-light: #025373 !important;
+  --theme2-dark: #025E73 !important;
+  --theme3-light: #F2C9D8 !important;
+  --theme3-dark: #F2C9D8 !important;
+  --color-background: #011826 !important;
+  --font-dark: #F2C9D8 !important;
+}
+
+/* Direct color overrides */
+#about .name-zone h1,
+#about .name-zone h2,
+#about .name-zone .title,
+#about .name-zone .subtitle {
+    color: #F2C9D8 !important;
+}
+
+/* Force all headings */
+h1, h2, h3, h4, h5, h6,
+.title, .subtitle,
+[class*="heading"] {
+    color: #F2C9D8 !important;
+}
+
+/* Base styles */
+body {
+    background-color: #011826 !important;
+    color: #F2C9D8 !important;
+}
+
+/* Profile section */
+#about .profile-zone {
+    background-color: #025373 !important;
+}
+
+#about .profile-zone * {
+    color: #F2C9D8 !important;
+}
+
+/* Links */
+a:not(.button):not(.btn) {
+    color: #025373 !important;
+}
+
+a:hover:not(.button):not(.btn) {
+    color: #025E73 !important;
+}
+
+/* Buttons */
+.button,
+.btn {
+    background-color: #025373 !important;
+    color: #F2C9D8 !important;
+    border-color: #F2C9D8 !important;
+}
+
+.button:hover,
+.btn:hover {
+    background-color: #025E73 !important;
+}
+
+/* Navigation */
+.nav,
+.navbar,
+header {
+    background-color: #012840 !important;
+    color: #F2C9D8 !important;
+}
+
+/* Content sections */
+.section,
+.content {
+    color: #F2C9D8 !important;
+}
+
+/* Cards */
+.card {
+    background-color: #012840 !important;
+    color: #F2C9D8 !important;
+    border-color: #025373 !important;
+}
+
+/* Timeline */
+.timeline-item::before {
+    background-color: #F2C9D8 !important;
+}
+
+/* Force text colors */
+p, span, div {
+    color: inherit !important;
+}
+
+/* Profile zone overrides */
+#about .profile-zone,
+[id="about"] [class="profile-zone"] {
+    background-color: #025373 !important;
+}
+
+#about .profile-zone .profile-img,
+[id="about"] [class="profile-zone"] [class="profile-img"] {
+    border-color: #F2C9D8 !important;
+}
+
+#about .profile-zone .personal-info,
+[id="about"] [class="profile-zone"] [class="personal-info"] {
+    color: #F2C9D8 !important;
+}
+
+/* Content overrides */
+#contents .subject-name,
+[id="contents"] [class="subject-name"] {
+    color: #F2C9D8 !important;
+    border-color: #F2C9D8 !important;
+}
+
+/* Force all text elements */
+p, span, div, li, td, th {
+    color: inherit !important;
+}
+
+/* Links */
+a, a:link, a:visited {
+    color: #025373 !important;
+}
+
+a:hover, a:active {
+    color: #025E73 !important;
+}
+
+/* Buttons and interactive elements */
+button,
+.button,
+.btn {
+    background-color: #025373 !important;
+    color: #F2C9D8 !important;
+    border-color: #F2C9D8 !important;
+}
+
+button:hover,
+.button:hover,
+.btn:hover {
+    background-color: #025E73 !important;
+}
+
+/* Timeline dots */
+#contents .content-header:before,
+.content-header:before {
+    background: #F2C9D8 !important;
+}
+
+/* Sidebar */
+#sidebar li,
+.sidebar li {
+    background: #025373 !important;
+}
+
+#sidebar li a,
+.sidebar li a {
+    color: #F2C9D8 !important;
+    text-shadow: none !important;
+}
+
+#sidebar li:hover,
+#sidebar li.active,
+.sidebar li:hover,
+.sidebar li.active {
+    background: #025E73 !important;
+}
+
+/* Footer */
+#footer,
+footer,
+.footer {
+    background: #012840 !important;
+    color: #F2C9D8 !important;
+}
+
+#footer a,
+footer a,
+.footer a {
+    color: #025373 !important;
+}
+
+/* Cards and sections */
+.timeline-item,
+.card,
+.project-card {
+    background-color: #012840 !important;
+    color: #F2C9D8 !important;
+    border-color: #025373 !important;
+}
+
+/* Skills and tags */
+.skill-tag,
+.tag,
+.badge {
+    background-color: #025373 !important;
+    color: #F2C9D8 !important;
+}
+
+.skill-tag:hover,
+.tag:hover,
+.badge:hover {
+    background-color: #025E73 !important;
+}
+
+/* Navigation bar */
+.navigation-bar,
+nav,
+header {
+    background-color: #012840 !important;
+    color: #F2C9D8 !important;
+}
+
+/* Content zone */
+.content-zone,
+main,
+.section,
+article {
+    background-color: #F2C9D8 !important;
+    color: #011826 !important;
+}
+
+/* Bio section */
+.bio-section {
+    background-color: #012840;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #025373;
+}
+
+.bio-section p {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #F2C9D8 !important;
+}
+
+/* About section */
+#about-me {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+#about-me .item {
+    background-color: #012840;
+    border: 1px solid #025373;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#about-me .item h3 {
+    color: #F2C9D8 !important;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#about-me .item p {
+    color: #F2C9D8 !important;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#about-me .item ul {
+    color: #F2C9D8 !important;
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+#about-me .item li {
+    color: #F2C9D8 !important;
+    margin-bottom: 0.5rem;
+}
