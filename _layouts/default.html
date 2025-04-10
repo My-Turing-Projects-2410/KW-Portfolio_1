@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- Devicon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/z-custom.css' | relative_url }}">
+    
+
+    <!-- Inline Style Overrides -->
+    <style>
+        /* Force colors */
+        #about .name-zone h1,
+        #about .name-zone h2 {
+            color: #F2C9D8 !important;
+        }
+        
+        /* Bio section styling */
+        .bio-section {
+            padding: 2rem 0;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #F2C9D8 !important;
+        }
+
+        /* Contact info styling */
+        .contact-info {
+            text-align: center;
+            margin: 1rem 0;
+            color: #F2C9D8;
+        }
+        
+        .contact-info a {
+            color: #F2C9D8;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.2s ease;
+        }
+        
+        .contact-info a:hover {
+            color: #025373;
+        }
+
+        .contact-info i {
+            margin-right: 0.5rem;
+        }
+    </style>
+    
+    <!-- Debug Script -->
+    <script>
+        console.log('=== CSS Debug Info ===');
+        document.addEventListener('DOMContentLoaded', () => {
+            const h2 = document.querySelector('#about .name-zone h2');
+            if (h2) {
+                const style = getComputedStyle(h2);
+                console.log('Target Color: #F2C9D8');
+                console.log('Current Color:', style.color);
+                console.log('Element Text:', h2.textContent);
+                
+                // Log all CSS rules affecting the h2
+                const rules = [];
+                for (const sheet of document.styleSheets) {
+                    try {
+                        for (const rule of sheet.cssRules) {
+                            if (rule.selectorText && h2.matches(rule.selectorText)) {
+                                rules.push({
+                                    selector: rule.selectorText,
+                                    color: rule.style.color,
+                                    source: sheet.href || 'inline style'
+                                });
+                            }
+                        }
+                    } catch (e) {
+                        console.log('Could not read stylesheet:', sheet.href);
+                    }
+                }
+                console.table(rules);
+            } else {
+                console.log('H2 element not found!');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.job }}</p>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+            {% if site.phone_number %}
+            <a href="tel:{{ site.phone_number }}"><i class="fas fa-phone"></i>{{ site.phone_number }}</a>
+            {% endif %}
+            
+            {% if site.email %}
+            <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i>{{ site.email }}</a>
+            {% endif %}
+            
+            {% if site.address %}
+            <span><i class="fas fa-map-marker-alt"></i>{{ site.address }}</span>
+            {% endif %}
+            
+            {% if site.resume %}
+            <a href="{{ site.resume }}" target="_blank"><i class="fas fa-file-alt"></i>Resume</a>
+            {% endif %}
+            
+            {% if site.linkedin_username %}
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            {% endif %}
+            
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+            {% endif %}
+        </div>
+    </header>
+    
+    <!-- Bio Section -->
+    {% if site.bio %}
+    <div class="bio-section">
+        <p>{{ site.bio }}</p>
+    </div>
+    {% endif %}
+    
+    <div class="content">
+        {{ content }}
+    </div>
+</body>
+</html>
