@@ -7,7 +7,7 @@ contents:
       <div style="display: flex; align-items: center; gap: 20px;"> 
         <img src="/assets/img/TinyRepRadarLogo.png" alt="Tiny RepRadar Logo" style="height: 200px;">
         <div style="flex: 1; line-height: 1.5;">RepRadar is a civic engagement web app that helps users stay informed about their local representatives and the latest Executive Orders by zip code. Built in two weeks with a team of six developers, the app uses React, Ruby on Rails, PostgreSQL, and external APIs.<br><br>
-        <div style="padding-left: 20px; line-height: 1.5;">
+        <div style="padding-left: 20px; line-height: 1.5; font-size: 0.95em;">
           •  Pitched the concept, sourced key APIs, and contributed across the stack—from designing a RESTful backend and managing real-time data to building responsive frontend components.<br><br>
           •  Led development of the Executive Orders feature, including data retrieval, filtering, conditional saving to user profiles, and building full list and detail views to improve usability.<br><br>
           •  As a stretch goal, integrated OpenAI to generate readable summaries and built a homepage ticker that displays the five most recent Executive Orders in real time.
@@ -16,8 +16,8 @@ contents:
   - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000; font-size: 1.2em;">Samovar Tea Subscriptions</strong></span><span style="margin-left: 15px;"><a href="https://github.com/KMPWeiland/samovar_tea_subscription_be_api">Backend Repo</a> | <a href="https://github.com/KMPWeiland/samovar_fe">Frontend Repo</a></span></div>'
     header: '<div style="display: flex; align-items: center; gap: 20px;">
       <img src="/assets/img/TinySamovarLogo.png" alt="Samovar Logo" style="height: 200px;">
-      <div style="flex: 1; line-height: 1.5;">Samovar Admin Portal is a full-stack application that allows users to manage tea subscriptions, view customer profiles, and explore tea details. Built solo using a Rails API backend and a React frontend, the project emphasizes scalable data modeling, robust backend architecture, and a tested, user-friendly interface.<br><br>
-        <div style="padding-left: 20px; line-height: 1.5;">
+      <div style="flex: 1; line-height: 1.5;">Samovar Admin Portal is a full-stack application that allows users to manage tea subscriptions, view customer profiles, and explore tea details. Built solo using a Rails API backend and a React frontend, with a focus on scalable data modeling, test-driven development, and a user-friendly interface.<br><br>
+        <div style="padding-left: 20px; line-height: 1.5; font-size: 0.95em;">
           •  Designed and implemented a custom backend with RESTful routes, model-level validations, and business logic for filtering and sorting, including safeguards for update/delete failures.<br><br>
           •  Wrote comprehensive request and model specs using RSpec, generated seed and test data with FactoryBot and Faker, and built in custom error handling for invalid requests.<br><br>
           •  Developed a responsive frontend in React and tested core user flows using Cypress.
