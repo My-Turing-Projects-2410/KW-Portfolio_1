@@ -2,24 +2,31 @@ subject: Projects
 listing-order: 3
 icon: "/assets/img/coding-svgrepo-com.svg"
 contents:
-  - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000;">RepRadar</strong></span><span style="margin-left: 15px;"><a href="https://github.com/RedRadar-WT-Team/backend">Backend Repo</a> | <a href="https://github.com/RedRadar-WT-Team/frontend">Frontend Repo</a></span></div>'
+  - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000; font-size: 1.2em;">RepRadar</strong></span><span style="margin-left: 15px;"><a href="https://github.com/RedRadar-WT-Team/backend">Backend Repo</a> | <a href="https://github.com/RedRadar-WT-Team/frontend">Frontend Repo</a></span></div>'
     header: >
       <div style="display: flex; align-items: center; gap: 20px;"> 
-        <img src="/assets/img/TinyRepRadarLogo.png" alt="Tiny RepRadar Logo" style="height: 175px;">
-        <div style="flex: 1; line-height: 1.5;">RepRadar is a civic engagement web application and tool that helps users stay informed about their local representatives and the latest Executive Orders by zip code, built with a team of five other developers in two weeks, using React, Ruby on Rails, PostgreSQL, and external APIs.</div>
+        <img src="/assets/img/TinyRepRadarLogo.png" alt="Tiny RepRadar Logo" style="height: 200px;">
+        <div style="flex: 1; line-height: 1.5;">RepRadar is a civic engagement web app that helps users stay informed about their local representatives and the latest Executive Orders by zip code. Built in two weeks with a team of six developers, the app uses React, Ruby on Rails, PostgreSQL, and external APIs.<br><br>
+        <div style="padding-left: 20px; line-height: 1.5;">
+          •  Pitched the concept, sourced key APIs, and contributed across the stack—from designing a RESTful backend and managing real-time data to building responsive frontend components.<br><br>
+          •  Led development of the Executive Orders feature, including data retrieval, filtering, conditional saving to user profiles, and building full list and detail views to improve usability.<br><br>
+          •  As a stretch goal, integrated OpenAI to generate readable summaries and built a homepage ticker that displays the five most recent Executive Orders in real time.
+        </div></div>
       </div>
-    description: 
-      - For this project, I pitched the concept to my team and sourced the external APIs that would achieve allow us to achieve our goals, including the Federal Register and OpenAI. It gave me hands-on experience designing a RESTful backend and handling real-time data parsing and storage.
-      - My primary focus was building out the Executive Orders feature—retrieving, filtering, and conditionally saving them to a user's profile—as well as constructing both the full list and detailed views to improve UX.
-      - One of our stretch goals was using OpenAI to generate readable summaries of each Executive Order, which I successfully implemented alongside a homepage ticker that updates with the five most recent orders.
-  - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000;">Samovar</strong>: Tea Subscriptions</span><span style="margin-left: 15px;"><a href="https://github.com/KMPWeiland/samovar_tea_subscription_be_api">Backend Repo</a> | <a href="https://github.com/KMPWeiland/samovar_fe">Frontend Repo</a></span></div>'
+  - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000; font-size: 1.2em;">Samovar Tea Subscriptions</strong></span><span style="margin-left: 15px;"><a href="https://github.com/KMPWeiland/samovar_tea_subscription_be_api">Backend Repo</a> | <a href="https://github.com/KMPWeiland/samovar_fe">Frontend Repo</a></span></div>'
     header: '<div style="display: flex; align-items: center; gap: 20px;">
-      <img src="/assets/img/TinySamovarLogo.png" alt="Samovar Logo" style="height: 175px;">
-      <div style="flex: 1; line-height: 1.5;">Samovar Admin Portal is a full-stack application built with a Rails API backend and a React frontend that allows users to manage tea subscriptions, including viewing detailed information about customers and the teas in their subscriptions. As a solo project, I designed and implemented a full backend from scratch while also planning for future scalability in the data model. I wrote request and model specs, handled edge cases like invalid subscription IDs, and used FactoryBot and Faker to generate realistic test and seed data.</div>
+      <img src="/assets/img/TinySamovarLogo.png" alt="Samovar Logo" style="height: 200px;">
+      <div style="flex: 1; line-height: 1.5;">Samovar Admin Portal is a full-stack application that allows users to manage tea subscriptions, view customer profiles, and explore tea details. Built solo using a Rails API backend and a React frontend, the project emphasizes scalable data modeling, robust backend architecture, and a tested, user-friendly interface.<br><br>
+        <div style="padding-left: 20px; line-height: 1.5;">
+          •  Designed and implemented a custom backend with RESTful routes, model-level validations, and business logic for filtering and sorting, including safeguards for update/delete failures.<br><br>
+          •  Wrote comprehensive request and model specs using RSpec, generated seed and test data with FactoryBot and Faker, and built in custom error handling for invalid requests.<br><br>
+          •  Developed a responsive frontend in React and tested core user flows using Cypress.
+        </div>
+      </div>
     </div>'
-    description: 
-      - I focused on writing clean, RESTful controllers, moving business logic into the models (such as sorting by price), and ensuring data integrity with model-level validations, comprehensive test coverage, and custom error handling to return user-friendly responses when updates or deletions failed.
-      - On the frontend, I built a responsive React interface and wrote end-to-end tests using Cypress to ensure core user flows worked as expected.
+    # description: 
+    #   - I focused on writing clean, RESTful controllers, moving business logic into the models (such as sorting by price), and ensuring data integrity with model-level validations, comprehensive test coverage, and custom error handling to return user-friendly responses when updates or deletions failed.
+    #   - On the frontend, I built a responsive React interface and wrote end-to-end tests using Cypress to ensure core user flows worked as expected.
   - title: "PiTorch ([https://pitorch.org/](https://pytorch.org/))"
     description: 
       - Machine learning library for applications such as computer vision and natural language processing
