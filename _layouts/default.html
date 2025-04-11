@@ -14,7 +14,7 @@
     <!-- Devicon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     
-    <!-- Custom CSS -->
+    <!-- KW Custom CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/z-custom.css' | relative_url }}">
     
 
@@ -94,6 +94,59 @@
             }
         });
     </script>
+
+    <!-- Color Variable Override Script -->
+    <!-- <style>
+        :root {
+        --theme1-light: #F2C9D8 !important;
+        --theme1-dark: #012840 !important;
+        --theme2-light: #025373 !important;
+        --theme2-dark: #025E73 !important;
+        --theme3-light: #F2C9D8 !important;
+        --theme3-dark: #F2C9D8 !important;
+        --color-background: #011826 !important;
+        --font-dark: #F2C9D8 !important;
+        }
+    </style> -->
+    <script>
+        function applyCustomThemeVariables() {
+          const root = document.documentElement;
+          root.style.setProperty('--theme1-light', '#F2C9D8');
+          root.style.setProperty('--theme1-dark', '#012840');
+          root.style.setProperty('--theme2-light', '#025373');
+          root.style.setProperty('--theme2-dark', '#025E73');
+          root.style.setProperty('--theme3-light', '#F2C9D8');
+          root.style.setProperty('--theme3-dark', '#F2C9D8');
+          root.style.setProperty('--color-background', '#011826');
+          root.style.setProperty('--font-dark', '#F2C9D8');
+          console.log("✅ Custom theme variables reapplied");
+        }
+      
+        // Apply immediately (in case it works early)
+        applyCustomThemeVariables();
+      
+        // Also apply any time a new <style> is added (which might reset the theme vars)
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+              if (node.tagName === 'STYLE') {
+                applyCustomThemeVariables();
+              }
+            });
+          });
+        });
+      
+        observer.observe(document.head, {
+          childList: true,
+          subtree: true
+        });
+      
+        // Final backup in case it's added very late
+        window.addEventListener('load', () => {
+          setTimeout(applyCustomThemeVariables, 100);
+        });
+      </script>
+      
 </head>
 <body>
     <header class="header">
