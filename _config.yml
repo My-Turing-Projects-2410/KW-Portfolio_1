@@ -27,10 +27,22 @@ sass:
 extra_css:
   - /assets/css/custom.css
 
+sections:
+  about: true
+  education: false
+  experience: true
+  projects: true
+  skills: true
+  languages: true
+  publications: true
+  awards: false
+
 exclude:
   - _posts/
   - resources/
   - vendor/
+  - _data/_Awards.yml
+  - _data/Awards.yml
 
 # Welcome to Jekyll!
 #
