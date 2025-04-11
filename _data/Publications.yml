@@ -1,6 +1,6 @@
 subject: Films
 listing-order: 4
-icon: "/assets/img/globe.svg"
+icon: "/assets/img/film-svgrepo-com.svg"
 contents:
   - title: Journal
     ref: 
