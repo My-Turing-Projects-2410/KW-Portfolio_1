@@ -24,3 +24,27 @@ contents:
           </div>
         </div>
       </div>
+  - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000; font-size: 1.2em;">Samovar Tea Subscriptions</strong></span><span style="margin-left: 15px;"><a href="https://github.com/KMPWeiland/samovar_tea_subscription_be_api">Backend Repo</a> | <a href="https://github.com/KMPWeiland/samovar_fe">Frontend Repo</a></span></div>'
+    header: |
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="/KW-Portfolio_1/assets/img/TinySamovarLogo.png" alt="Samovar Logo" style="height: 200px;">
+        <div style="flex: 1; line-height: 1.5;">Samovar Admin Portal is a full-stack web application that allows users to manage tea subscriptions, view customer profiles, and explore tea details. Built solo using a Rails API backend and a React frontend, with a focus on scalable data modeling, test-driven development, and a user-friendly interface.<br><br>
+          <div style="padding-left: 20px; line-height: 1.5; font-size: 0.95em;">
+            •  I designed and implemented a custom backend with RESTful routes, model-level validations, and business logic for filtering and sorting, including safeguards for update/delete failures.<br><br>
+            •  Wrote comprehensive request and model specs using RSpec, generated seed and test data with FactoryBot and Faker, and built in custom error handling for invalid requests.<br><br>
+            •  Developed a responsive frontend in React and tested core user flows using Cypress.
+          </div>
+        </div>
+      </div>
+  - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000; font-size: 1.2em;">Rancid Tomatillos</strong></span><span style="margin-left: 15px;"><a href="https://steady-druid-f9301f.netlify.app/">Deployed Site</a> | <a href="https://github.com/My-Turing-Projects-2410/rancid-tomatillos">Frontend Repo</a> | <a href="https://drive.google.com/file/d/1MZjn53ELwC9BhrqbsmTdXIdxU69-mwBR/view?usp=drive_link">App Demo</a></span></div>'
+    header: |
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="/KW-Portfolio_1/assets/img/NewRancidTomatillosLogo.png" alt="Rancid Tomatillos Logo" style="height: 200px;">
+        <div style="flex: 1; line-height: 1.5;">Rancid Tomatillos is a movie rating web application inspired by Rotten Tomatoes. A paired project built with React, tested with Cypress, and deployed with Netlify, this app allows users to browse movies, view details, and watch trailers.<br><br>
+          <div style="padding-left: 20px; line-height: 1.5; font-size: 0.95em;">
+            •  Built a responsive React frontend that fetches and displays movie data from an external API, with a focus on accessibility and user experience.<br><br>
+            •  Implemented client-side routing using React Router for seamless navigation between movie listings and detailed views.<br><br>
+            •  Wrote comprehensive end-to-end tests using Cypress to ensure core user flows worked as expected.
+          </div>
+        </div>
+      </div>
