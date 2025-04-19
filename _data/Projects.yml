@@ -2,8 +2,7 @@ subject: Projects
 listing-order: 3
 icon: "/assets/img/coding-svgrepo-com.svg"
 contents:
-  -
-    title: |
+  - title: |
       <div style="display: flex; align-items: center; gap: 15px;">
         <span>
           <strong style="font-weight: 1000; font-size: 1.2em;">RepRadar</strong>
