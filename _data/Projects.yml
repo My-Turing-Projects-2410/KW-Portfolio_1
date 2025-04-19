@@ -2,7 +2,17 @@ subject: Projects
 listing-order: 3
 icon: "/assets/img/coding-svgrepo-com.svg"
 contents:
-  - title: '<div style="display: flex; align-items: center; gap: 15px;"><span><strong style="font-weight: 1000; font-size: 1.2em;">RepRadar</strong></span><span style="margin-left: 15px;"><a href="[https://github.com/RedRadar-WT-Team/backend">Backend](https://github.com/RedRadar-WT-Team/backend">Backend) Repo</a> | <a href="[https://github.com/RedRadar-WT-Team/frontend">Frontend](https://github.com/RedRadar-WT-Team/frontend">Frontend) Repo</a></span></div>'
+  - title: |
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <span>
+        <strong style="font-weight: 1000; font-size: 1.2em;">RepRadar</strong>
+      </span>
+      <span style="margin-left: 15px;">
+        <a href="[https://github.com/RedRadar-WT-Team/backend">Backend](https://github.com/RedRadar-WT-Team/backend">Backend) Repo</a> |
+        <a href="[https://github.com/RedRadar-WT-Team/frontend">Frontend](https://github.com/RedRadar-WT-Team/frontend">Frontend) Repo</a>
+      </span>
+    </div>
+  
     header: |
       <div style="display: flex; align-items: center; gap: 20px;"> 
         <img src="/KW-Portfolio_1/assets/img/TinyRepRadarLogo.png" alt="Tiny RepRadar Logo" style="height: 200px;">
